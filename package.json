@@ -1,0 +1,25 @@
+{
+  "name": "Loginator",
+  "version": "0.0.0",
+  "description": "Logs IRC for Quotinator",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Quotinator/Loginator.git"
+  },
+  "keywords": [
+    "IRC",
+    "Quotinator"
+  ],
+  "author": "Travis Beck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Quotinator/Loginator/issues"
+  },
+  "dependencies": {
+    "irc": "0.3.6"
+  }
+}

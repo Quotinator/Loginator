@@ -1,0 +1,8 @@
+{
+  "server" : "yourserverhere",
+  "nick" : "Loginator",
+  "options" : {
+    "channels" : ["#dev", "#bot"],
+    "port" : 6667
+  }
+}
