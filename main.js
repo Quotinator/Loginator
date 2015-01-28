@@ -29,6 +29,10 @@ client.addListener('part', function (channel, nick, reason, message) {
     logSave({channel: channel, type: 'part', nick: nick, reason: reason});
 });
 
+client.addListener('quit', function (nick, reason, channels, message) {
+	logSave({type: 'quit', nick: nick, reason: reason});
+});
+
 client.addListener('error', function(message) {
     console.log('error: ', message);
 });
