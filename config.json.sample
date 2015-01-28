@@ -1,8 +1,15 @@
 {
-  "server" : "yourserverhere",
-  "nick" : "Loginator",
-  "options" : {
-    "channels" : ["#dev", "#bot"],
-    "port" : 6667
+  "db" : {
+    "connectionString" : "mongodb://127.0.0.1/Loginator",
+    "collection" : "logs",
+    "retention" : 1800
+  },
+  "irc" : {
+    "server" : "yourserver.name",
+    "nick" : "Loginator",
+    "options" : {
+      "channels" : ["#dev", "#bot"],
+      "port" : 6667
+    }
   }
 }
