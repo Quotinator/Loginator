@@ -30,7 +30,11 @@ client.addListener('part', function (channel, nick, reason, message) {
 });
 
 client.addListener('quit', function (nick, reason, channels, message) {
-	logSave({type: 'quit', nick: nick, reason: reason});
+    logSave({type: 'quit', nick: nick, reason: reason});
+});
+
+client.addListener('invite', function (channel, from, message) {
+    client.join(channel);
 });
 
 client.addListener('error', function(message) {
