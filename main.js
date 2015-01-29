@@ -37,6 +37,10 @@ client.addListener('invite', function (channel, from, message) {
     client.join(channel);
 });
 
+client.addListener('action', function (from, to, message) {
+    logSave({channel: to, type: 'action', nick: from, message: message});
+});
+
 client.addListener('error', function(message) {
     console.log('error: ', message);
 });
