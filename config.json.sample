@@ -9,7 +9,8 @@
     "nick" : "Loginator",
     "options" : {
       "channels" : ["#dev", "#bot"],
-      "port" : 6667
+      "port" : 6667,
+      "stripColors": true
     }
   }
 }
