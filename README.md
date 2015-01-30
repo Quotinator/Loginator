@@ -16,11 +16,13 @@ $ forever start main.js
 
 # Configuration
 Loginator is packaged with a sample config: [config.json.sample](config.json.sample)
+
 ## Database
-* `connectionString` - We use a standard MongoDB connection string. For more info, visit MongoDB's website on the topic: [Connection String URI Format](http://docs.mongodb.org/manual/reference/connection-string/)
+* `connectionString` - We use a standard MongoDB connection string. For more information, visit MongoDB's website on the topic: [Connection String URI Format](http://docs.mongodb.org/manual/reference/connection-string/)
 * `chat` - This is the collection where chat logs are stored. Default value is `chat`.
 * `channels` - This is the collection where persistant channels are stored. Default value is `channels`.
 * `retention` - This is how long messages will be logged in the `chat` collection. Default value is `1800` seconds. Remove this field from the config will make Loginator retain messages forever.
+
 ## IRC Client
 * `server` - Your IRC servers hostname or IP.
 * `nick` - What you want to call Loginator.
