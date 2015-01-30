@@ -35,6 +35,13 @@ var channelPersist = function(channel, nick) {
 
 /** Listeners **/
 
+//Connected!
+client.addListener('registered', function(message) {
+    if (typeof config.irc.nickpass !== 'undefined') {
+        client.say('NickServ', 'identify ' + config.irc.nickpass);
+    }
+});
+
 //Channel listener
 client.addListener('message#', function (nick, channel, message) {
     logSave({channel: channel, type: 'message', nick: nick, message: message});

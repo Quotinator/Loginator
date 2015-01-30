@@ -24,6 +24,7 @@ Loginator is packaged with a sample config: [config.json.sample](config.json.sam
 ## IRC Client
 * `server` - Your IRC servers hostname or IP.
 * `nick` - What you want to call Loginator.
+* `nickpass` - NickServ password.
 * `options` - There are more options than listed below. This list is just passed to Node IRC. For a full list visit: [Node-IRC API](https://node-irc.readthedocs.org/en/latest/API.html#events)
   * `channels` - Default channels that Loginator will always connect to. Persistant channels defined from within IRC are appended to this at startup.
   * `port` - IRC server port.

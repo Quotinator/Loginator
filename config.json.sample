@@ -8,6 +8,7 @@
   "irc" : {
     "server" : "yourserver.name",
     "nick" : "Loginator",
+    "nickpass" : "secretpasshere",
     "options" : {
       "channels" : ["#dev", "#bot"],
       "port" : 6667,
